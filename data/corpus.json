@@ -1,0 +1,573 @@
+{
+  "version": "1.0.0",
+  "description": "Synthetic sanctions / adverse-media watchlist corpus. Names, DOBs, and nationalities are fictional and generated for testing only.",
+  "seed": 42,
+  "count": 80,
+  "tier_counts": {
+    "CONFIRMED_SANCTIONS": 28,
+    "ADVERSE_NEWS": 24,
+    "NAME_SIMILARITY_ONLY": 28
+  },
+  "entries": [
+    {
+      "id": "NEWS-001",
+      "name": "Jose Garcia",
+      "dob": "1979-11-05",
+      "nationality": "Mexico",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-002",
+      "name": "Katherine Muller",
+      "dob": "1985-03-19",
+      "nationality": "Germany",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-003",
+      "name": "Robert Chen",
+      "dob": "1970-08-14",
+      "nationality": "Singapore",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-004",
+      "name": "Fatima Bourbon",
+      "dob": "1988-05-22",
+      "nationality": "France",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-005",
+      "name": "Sergei Morozov",
+      "dob": "1974-10-09",
+      "nationality": "Russia",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-006",
+      "name": "Carlos Mendoza",
+      "dob": "1981-01-30",
+      "nationality": "Colombia",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-007",
+      "name": "Nadia Petrenko",
+      "dob": "1987-06-12",
+      "nationality": "Ukraine",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-008",
+      "name": "Ibrahim Toure",
+      "dob": "1976-09-08",
+      "nationality": "Mali",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-009",
+      "name": "Lakshmi Nair",
+      "dob": "1983-04-17",
+      "nationality": "India",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-010",
+      "name": "Giovanni Russo",
+      "dob": "1969-12-01",
+      "nationality": "Italy",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-011",
+      "name": "Sean Blake",
+      "dob": "1961-06-19",
+      "nationality": "China",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-012",
+      "name": "Lisa Hensley",
+      "dob": "1989-11-21",
+      "nationality": "Belarus",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-013",
+      "name": "Benjamin Stanley",
+      "dob": "1970-04-17",
+      "nationality": "Myanmar",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-014",
+      "name": "Mark Ferguson",
+      "dob": "1967-04-05",
+      "nationality": "North Korea",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-015",
+      "name": "Colleen Nguyen",
+      "dob": "1954-05-29",
+      "nationality": "Iran",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-016",
+      "name": "Andrew Stewart",
+      "dob": "1968-10-26",
+      "nationality": "United States",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-017",
+      "name": "Zachary Rice",
+      "dob": "1988-03-31",
+      "nationality": "Pakistan",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-018",
+      "name": "Paula Moreno",
+      "dob": "1950-08-22",
+      "nationality": "Cuba",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-019",
+      "name": "Lisa Brandt",
+      "dob": "1987-04-20",
+      "nationality": "Myanmar",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-020",
+      "name": "David Caldwell",
+      "dob": "1965-03-06",
+      "nationality": "Myanmar",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-021",
+      "name": "Nicholas Nunez",
+      "dob": "1994-07-28",
+      "nationality": "Turkey",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-022",
+      "name": "James Morgan",
+      "dob": "1958-01-13",
+      "nationality": "Myanmar",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-023",
+      "name": "Joel Baxter",
+      "dob": "1955-09-24",
+      "nationality": "Myanmar",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "NEWS-024",
+      "name": "Sarah Martin",
+      "dob": "1983-08-25",
+      "nationality": "North Korea",
+      "tier": "ADVERSE_NEWS"
+    },
+    {
+      "id": "SANC-001",
+      "name": "Elena Volkov",
+      "dob": "1968-04-15",
+      "nationality": "Russia",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-002",
+      "name": "Mohammed Al-Rashid",
+      "dob": "1972-09-30",
+      "nationality": "Syria",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-003",
+      "name": "Dmitri Ivanov",
+      "dob": "1980-01-22",
+      "nationality": "Russia",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-004",
+      "name": "Viktor Petrov",
+      "dob": "1965-07-11",
+      "nationality": "Belarus",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-005",
+      "name": "Kim Jong-Su",
+      "dob": "1958-12-03",
+      "nationality": "North Korea",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-006",
+      "name": "Ali Hassan Nasrallah",
+      "dob": "1975-06-18",
+      "nationality": "Lebanon",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-007",
+      "name": "Ahmed Farouk",
+      "dob": "1983-02-27",
+      "nationality": "Egypt",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-008",
+      "name": "Ramzan Kadyrov",
+      "dob": "1976-10-05",
+      "nationality": "Russia",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-009",
+      "name": "Bashar Nadal",
+      "dob": "1970-08-21",
+      "nationality": "Syria",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-010",
+      "name": "Reza Motevalli",
+      "dob": "1978-03-14",
+      "nationality": "Iran",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-011",
+      "name": "Javier Johnson",
+      "dob": "1965-06-24",
+      "nationality": "Indonesia",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-012",
+      "name": "Lance Hoffman",
+      "dob": "1999-04-29",
+      "nationality": "Indonesia",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-013",
+      "name": "Gina Moore",
+      "dob": "1973-07-04",
+      "nationality": "Cuba",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-014",
+      "name": "James Howard",
+      "dob": "1974-01-03",
+      "nationality": "Ukraine",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-015",
+      "name": "Renee Blair",
+      "dob": "1987-02-03",
+      "nationality": "Cuba",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-016",
+      "name": "Roy Martin",
+      "dob": "1974-10-11",
+      "nationality": "Poland",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-017",
+      "name": "Derek Zuniga",
+      "dob": "1994-09-13",
+      "nationality": "France",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-018",
+      "name": "James Mayo",
+      "dob": "1994-02-25",
+      "nationality": "Vietnam",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-019",
+      "name": "Matthew Foster",
+      "dob": "1994-05-07",
+      "nationality": "China",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-020",
+      "name": "Nicole Patterson",
+      "dob": "1990-04-23",
+      "nationality": "Germany",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-021",
+      "name": "Daniel Bright",
+      "dob": "1985-04-10",
+      "nationality": "Sudan",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-022",
+      "name": "Alexandra Le",
+      "dob": "1996-12-28",
+      "nationality": "Egypt",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-023",
+      "name": "Nicole Mack",
+      "dob": "1973-10-01",
+      "nationality": "Sudan",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-024",
+      "name": "Ashley Garrett",
+      "dob": "1994-01-30",
+      "nationality": "Turkey",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-025",
+      "name": "Keith Miller",
+      "dob": "2000-05-28",
+      "nationality": "Turkey",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-026",
+      "name": "Miranda Khan",
+      "dob": "1989-10-23",
+      "nationality": "Mexico",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-027",
+      "name": "Matthew Gomez",
+      "dob": "1978-07-30",
+      "nationality": "Spain",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SANC-028",
+      "name": "Connor West",
+      "dob": "1979-04-23",
+      "nationality": "Indonesia",
+      "tier": "CONFIRMED_SANCTIONS"
+    },
+    {
+      "id": "SIM-001",
+      "name": "John Smith",
+      "dob": "1975-03-12",
+      "nationality": "Nigeria",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-002",
+      "name": "Maria Rodriguez",
+      "dob": "1982-07-30",
+      "nationality": "Spain",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-003",
+      "name": "David Johnson",
+      "dob": "1969-04-25",
+      "nationality": "United States",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-004",
+      "name": "Wei Zhang",
+      "dob": "1990-06-08",
+      "nationality": "China",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-005",
+      "name": "Anna Kowalski",
+      "dob": "1986-09-17",
+      "nationality": "Poland",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-006",
+      "name": "Michael Brown",
+      "dob": "1978-02-14",
+      "nationality": "United Kingdom",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-007",
+      "name": "Sofia Rossi",
+      "dob": "1991-11-23",
+      "nationality": "Italy",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-008",
+      "name": "Allison Hill",
+      "dob": "1965-10-15",
+      "nationality": "Russia",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-009",
+      "name": "Brian Yang",
+      "dob": "1987-09-18",
+      "nationality": "Belarus",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-010",
+      "name": "Kimberly Robinson",
+      "dob": "1990-09-13",
+      "nationality": "Iran",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-011",
+      "name": "Thomas Miller",
+      "dob": "1970-07-20",
+      "nationality": "Pakistan",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-012",
+      "name": "Thomas Bradley",
+      "dob": "1999-06-15",
+      "nationality": "Ukraine",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-013",
+      "name": "Derek Wright",
+      "dob": "1988-10-19",
+      "nationality": "Brazil",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-014",
+      "name": "Michael Carlson",
+      "dob": "1976-10-13",
+      "nationality": "United States",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-015",
+      "name": "Jeffrey Chavez",
+      "dob": "1999-09-27",
+      "nationality": "Belarus",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-016",
+      "name": "Deborah Mason",
+      "dob": "1962-10-04",
+      "nationality": "Germany",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-017",
+      "name": "Christina Brooks",
+      "dob": "1961-08-05",
+      "nationality": "Venezuela",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-018",
+      "name": "Katherine Rodriguez",
+      "dob": "1975-04-20",
+      "nationality": "Pakistan",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-019",
+      "name": "Sandra Parker",
+      "dob": "1954-07-17",
+      "nationality": "Turkey",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-020",
+      "name": "John Pierce",
+      "dob": "1968-08-21",
+      "nationality": "Venezuela",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-021",
+      "name": "Melissa Marquez",
+      "dob": "1977-10-02",
+      "nationality": "Turkey",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-022",
+      "name": "Marie Kim DDS",
+      "dob": "1958-11-01",
+      "nationality": "Belarus",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-023",
+      "name": "Austin Smith",
+      "dob": "1988-04-17",
+      "nationality": "Vietnam",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-024",
+      "name": "Daniel Jones",
+      "dob": "1993-07-19",
+      "nationality": "Belarus",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-025",
+      "name": "Austin Johnson",
+      "dob": "1973-01-31",
+      "nationality": "Poland",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-026",
+      "name": "Richard Aguirre",
+      "dob": "1963-07-23",
+      "nationality": "Nigeria",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-027",
+      "name": "Scott Pierce",
+      "dob": "1954-01-16",
+      "nationality": "France",
+      "tier": "NAME_SIMILARITY_ONLY"
+    },
+    {
+      "id": "SIM-028",
+      "name": "Kimberly Smith",
+      "dob": "1956-12-12",
+      "nationality": "Germany",
+      "tier": "NAME_SIMILARITY_ONLY"
+    }
+  ]
+}
