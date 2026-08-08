@@ -24,7 +24,9 @@ import json
 import random
 from pathlib import Path
 
+import jellyfish
 from faker import Faker
+from unidecode import unidecode
 
 CORPUS_VERSION = "1.0.0"
 EVAL_VERSION = "1.0.0"
@@ -87,11 +89,53 @@ NO_MATCH_NAMES = {
 }
 
 
+def _name_tokens(name: str) -> list[str]:
+    return "".join(c if c.isalnum() else " " for c in unidecode(name).lower()).split()
+
+
+def _phon(token: str) -> set[str]:
+    codes = set()
+    for fn in (jellyfish.metaphone, jellyfish.nysiis, jellyfish.soundex):
+        try:
+            c = fn(token)
+        except Exception:
+            c = ""
+        if c:
+            codes.add(c)
+    return codes
+
+
+def _is_full_name_twin(name: str, reserved: list[str]) -> bool:
+    """True if `name` is a first+last phonetic twin of any reserved name.
+
+    Prevents Faker filler from accidentally colliding with a frozen eval name
+    on BOTH given and family name (e.g. 'Thomas Miller' vs 'Thomas Mueller'),
+    which would silently turn a true-negative eval case into a real match.
+    Surname-only or given-only overlap is allowed on purpose — those are the
+    benign collisions the corpus is meant to contain.
+    """
+    nt = _name_tokens(name)
+    if len(nt) < 2:
+        return False
+    n_first, n_last = _phon(nt[0]), _phon(nt[-1])
+    for other in reserved:
+        ot = _name_tokens(other)
+        if len(ot) < 2:
+            continue
+        if (n_first & _phon(ot[0])) and (n_last & _phon(ot[-1])):
+            return True
+    return False
+
+
 def build_filler_corpus(target_total: int) -> list[dict]:
     """Faker-generated filler across the three tiers, deduped against reserved names."""
     fake = Faker()
     Faker.seed(SEED)
     random.seed(SEED)
+
+    # Full reserved name list (crafted corpus + eval-only NO_MATCH names) so filler
+    # never becomes a full-name twin of a frozen eval reference.
+    reserved_full = [e["name"] for e in CRAFTED_CORPUS] + sorted(NO_MATCH_NAMES)
 
     tiers = ["CONFIRMED_SANCTIONS", "ADVERSE_NEWS", "NAME_SIMILARITY_ONLY"]
     nationalities = [
@@ -114,6 +158,9 @@ def build_filler_corpus(target_total: int) -> list[dict]:
         name = fake.name()
         key = name.lower()
         if key in used or "." in name or len(name.split()) < 2:
+            i += 1
+            continue
+        if _is_full_name_twin(name, reserved_full):
             i += 1
             continue
         used.add(key)
