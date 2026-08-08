@@ -36,7 +36,7 @@ Every screening result validates against `ScreeningResult`:
 
 - [x] **Step 1** — Synthetic corpus + frozen labeled eval set (`data/corpus.json`, `data/eval_set.json`)
 - [x] **Step 2** — Deterministic candidate filter (`src/candidate_filter.py`, `tests/test_candidate_filter.py`)
-- [ ] Step 3 — LLM disambiguation agent
+- [x] **Step 3** — LLM disambiguation agent (`src/schema.py`, `src/disambiguator.py`, `tests/test_disambiguator.py`)
 - [ ] Step 4 — FastAPI endpoint + Gradio demo
 - [ ] Step 5 — Evaluation harness, tests, Docker, final metrics
 
