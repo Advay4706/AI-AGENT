@@ -37,8 +37,37 @@ Every screening result validates against `ScreeningResult`:
 - [x] **Step 1** — Synthetic corpus + frozen labeled eval set (`data/corpus.json`, `data/eval_set.json`)
 - [x] **Step 2** — Deterministic candidate filter (`src/candidate_filter.py`, `tests/test_candidate_filter.py`)
 - [x] **Step 3** — LLM disambiguation agent (`src/schema.py`, `src/disambiguator.py`, `tests/test_disambiguator.py`)
-- [ ] Step 4 — FastAPI endpoint + Gradio demo
+- [x] **Step 4** — FastAPI endpoint + Gradio demo (`src/api.py`, `src/gradio_app.py`, `tests/test_api.py`, `tests/test_gradio_app.py`)
 - [ ] Step 5 — Evaluation harness, tests, Docker, final metrics
+
+## Running
+
+The LLM stage needs an `ANTHROPIC_API_KEY` in the environment (see `.env.example`).
+Names with no plausible candidate short-circuit to `NO_MATCH` and work without a key.
+
+FastAPI service:
+
+```bash
+uvicorn src.api:app --reload
+```
+
+Then `POST /screen` (interactive docs at `/docs`):
+
+```bash
+curl -X POST http://127.0.0.1:8000/screen -H "Content-Type: application/json" -d "{\"name\":\"Elena Volkov\",\"dob\":\"1968-04-15\",\"nationality\":\"Russia\"}"
+```
+
+Gradio demo:
+
+```bash
+python -m src.gradio_app
+```
+
+Tests (no key/network required — the LLM client is mocked):
+
+```bash
+pytest -q
+```
 
 ## Data
 
